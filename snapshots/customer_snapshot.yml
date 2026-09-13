@@ -1,0 +1,10 @@
+snapshots:
+  - name: order_snapshot
+    relation: ref('fact_orders101')
+
+    config:
+      database: LEARNDBT
+      schema: snapshots
+      unique_key: order_id
+      strategy: timestamp
+      updated_at: updated_at
