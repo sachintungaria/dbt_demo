@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: tpcds
+    description: "Snowflake TPC-DS sample dataset"
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+
+    tables:
+      - name: customer
+        identifier: CUSTOMER
+
+      - name: store_sales
+        identifier: STORE_SALES
+
+      - name: item
+        identifier: ITEM
+
+      - name: date_dim
+        identifier: DATE_DIM
